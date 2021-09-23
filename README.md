@@ -1,3 +1,6 @@
+![Build Status](https://github.com/Enovea/s2-geometry-kotlin/actions/workflows/maven.yml/badge.svg)
+
+
 # Overview
 
 S2 is a library for spherical geometry that aims to have the same robustness,
