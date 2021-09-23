@@ -1,0 +1,6 @@
+<configuration>
+    <nonQualifierBranches>main</nonQualifierBranches>
+    <exclusions>
+        <exclusion>.m2</exclusion>
+    </exclusions>
+</configuration>

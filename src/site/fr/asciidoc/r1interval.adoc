@@ -1,0 +1,25 @@
+== R1Interval
+
+R1Interval représente un interval fermé stem:[[lo;hi]] de stem:[R].
+
+Un interval est représenté par:
+
+ - sa borne inférieure stem:[lo] et,
+ - sa borne supérieure stem:[hi].
+
+La classe R1Interval permet de faire les opérations suivantes:
+
+=== Contenance d'élément
+
+R1Interval permet de vérifier si un interval contient un réel ou tout un interval à l'aide des
+fonctions contains et interiorContains.
+
+[source, kotlin]
+/** Test si l'interval contient le réel p. */
+operator fun contains(p: Double): Boolean
+/** Test si l'interval ouvert ]hi;lo[ contient le réel p. */
+fun interiorContains(p: Double): Boolean
+/** Test si l'interval contient entièrement l'interval y. */
+operator fun contains(y: R1Interval): Boolean
+/** Test si l'interval ouvert ]hi;lo[ contient entièrement l'interval y. */
+fun interiorContains(y: R1Interval): Boolean

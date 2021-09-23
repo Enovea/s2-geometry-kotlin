@@ -1,0 +1,14 @@
+brew install cmake gflags google-glog openssl
+
+
+cd src/main/s2geometry
+mkdir build
+cd build
+cmake -DGTEST_ROOT=/Users/fabienmeurisse/Projects/Dilivia/workspace/dilivia-maps/2sphere/src/test/googletest -DWITH_GFLAGS=ON -DWITH_GLOG=ON  -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DOPENSSL_ROOT_DIR=/usr/local/Cellar/openssl@1.1/1.1.1k ..
+
+
+// You can omit -DGTEST_ROOT to skip tests; see above for macOS.
+cmake -DGTEST_ROOT=/usr/src/gtest ..
+make
+make test  # If GTEST_ROOT specified above.
+sudo make install
