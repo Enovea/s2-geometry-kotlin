@@ -22,5 +22,11 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
         cache: maven
+    
     - name: Run the Maven package phase
       run: mvn -B -U package
+    
+    - name: Publish to GitHub Packages Apache Maven
+      run: mvn deploy -DskipTests=true
+      env:
+        GITHUB_TOKEN: ${{ github.token }} # GITHUB_TOKEN is the default env for the password
