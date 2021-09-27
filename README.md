@@ -86,7 +86,7 @@ For an analogous library in C++, see https://github.com/google/s2geometry, in
 Go, see https://github.com/golang/geo, and Python, see
 https://github.com/google/s2geometry/tree/master/src/python
 
-# Status of the Go Library
+# Status of the Kotlin Library
 
 This library is principally a port of the
 [C++ S2 library](https://github.com/google/s2geometry), adapting to Kotlin idioms
