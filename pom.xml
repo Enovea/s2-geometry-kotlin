@@ -25,12 +25,36 @@
     <artifactId>ks2-geometry</artifactId>
     <name>S2 Geometry Library for Kotlin/Java</name>
     <version>1.0.0</version>
+    <url>https://github.com/Enovea/s2-geometry-kotlin</url>
     <organization>
         <url>https://www.linkedin.com/company/enovea/mycompany/</url>
         <name>Enovea</name>
     </organization>
+    <description>
+        Spherical geometry computation library. This library is a proting of the Google C++ library https://s2geometry.io.
+    </description>
 
+    <developers>
+        <developer>
+            <name>Fabien Meurisse</name>
+            <email>fabien.meurisse@enovea.net</email>
+            <organization>Enovea</organization>
+            <organizationUrl>https://www.enovea.net</organizationUrl>
+            <roles>
+                <role>Leader</role>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
 
+    <licenses>
+        <license>
+        <name>Apache License, Version 2.0</name>
+        <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        <distribution>repo</distribution>
+        <comments>A business-friendly OSS license</comments>
+    </license>
+    </licenses>
 
     <scm>
         <connection>git@github.com:Enovea/s2-geometry-kotlin.git</connection>
@@ -280,6 +304,15 @@
                     <version>${dokka.version}</version>
                     <executions>
                         <execution>
+                            <id>javadoc</id>
+                            <phase>prepare-package</phase>
+                            <goals>
+                                <goal>javadoc</goal>
+                                <goal>javadocJar</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>dokka</id>
                             <phase>pre-site</phase>
                             <goals>
                                 <goal>dokka</goal>
@@ -497,17 +530,5 @@
     </distributionManagement>
 
 
-    <contributors>
-        <contributor>
-            <name>Fabien Meurisse</name>
-            <email>fabien.meurisse@enovea.net</email>
-            <organization>Enovea</organization>
-            <organizationUrl>https://www.enovea.net</organizationUrl>
-            <roles>
-                <role>Leader</role>
-                <role>Developer</role>
-            </roles>
-        </contributor>
-    </contributors>
 
 </project>
