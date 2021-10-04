@@ -28,11 +28,8 @@ jobs:
         gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
         gpg-passphrase: MAVEN_GPG_PASSPHRASE
     
-    - name: Run the Maven package phase
-      run: mvn -B -U package
-    
-    - name: Publish to GitHub Packages Apache Maven
-      run: mvn -B deploy -DskipTests=true -Pci-cd
+    - name: Package and deploy
+      run: mvn -B deploy -Pci-cd
       env:
         MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
         MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
