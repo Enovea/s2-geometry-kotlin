@@ -24,7 +24,7 @@
     <groupId>net.enovea</groupId>
     <artifactId>ks2-geometry</artifactId>
     <name>S2 Geometry Library for Kotlin/Java</name>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <organization>
         <url>https://www.linkedin.com/company/enovea/mycompany/</url>
         <name>Enovea</name>
