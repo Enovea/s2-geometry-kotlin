@@ -1,4 +1,4 @@
-![Build Status](https://github.com/Enovea/s2-geometry-kotlin/actions/workflows/maven.yml/badge.svg)
+![Build Status](https://github.com/Enovea/s2-geometry-kotlin/actions/workflows/maven.yml/badge.svg) ![Coverage](.github/badges/jacoco.svg)
 
 
 # Overview
