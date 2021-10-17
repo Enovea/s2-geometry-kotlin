@@ -14,6 +14,23 @@ it especially suitable for working with geographic data.
 
 More details about S2 in general are available on the S2 Geometry Website
 [s2geometry.io](https://s2geometry.io/).
+## Installation
+
+### Maven
+
+```
+<dependency>
+  <groupId>net.enovea</groupId>
+  <artifactId>ks2-geometry</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
+### Gradle
+```
+
+implementation 'net.enovea:ks2-geometry:1.0.0'
+```
 
 ## Scope
 
